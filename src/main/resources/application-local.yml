@@ -1,0 +1,9 @@
+spring:
+  h2: #base d datos
+    console:
+      enabled: true #habilitar la consola
+      path: /console #definir un path a la consola para acceder desde el browser - en el navegador ponemos por ej localhost:8080/console y podemos manipular la db
+  datasource:
+    url: jdbc:h2:mem:testdb #url de la DB (h2) : nombre de la DB - este debe ser lo q ponemos en JDBC URL en localhost:8080/console
+  jpa:
+    show-sql: true #mostrar las query que vamos ejecutando en la consola de la terminal, muestra las query a la DB
